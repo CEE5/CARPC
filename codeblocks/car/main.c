@@ -54,6 +54,7 @@ void harakiri(){
 
     //AKKU aus
     PORTD &=~(1<<PD7);
+
 }
 
 ISR(INT0_vect)
@@ -181,7 +182,20 @@ ISR(TIMER1_OVF_vect)
         LED1 =0;
     }
 
-    if(exit >=60){
+//POWER-BUTTON ||----------
+    if(exit==100){
+
+        PORTD |=(1<<PD5);
+
+    }
+    if(exit == 102){
+        PORTD &= ~(1<<PD5);
+
+    }
+//POWER-BUTTON ---------||
+
+
+    if(exit >=200){
         harakiri();
     }
     else{
@@ -220,6 +234,15 @@ int main(void)
 
     displayAuf();
 
+
+//POWER-BUTTON
+    int h;
+    PORTD |=(1<<PD5);
+    for(h=0;h<20;h++){
+        _delay_ms(100);
+
+    }
+    PORTD &= ~(1<<PD5);
 
     init_TIMER();
 
