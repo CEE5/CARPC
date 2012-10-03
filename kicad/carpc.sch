@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Oct 2012 11:55:49 PM CEST
+EESchema Schematic File Version 2  date Thu 04 Oct 2012 12:28:32 AM CEST
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -55,14 +55,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 3300 3000 2    60   ~ 0
-12V
+Text Label 7600 3950 0    60   ~ 0
+TXD
 Wire Wire Line
-	3750 6550 3900 6550
+	7400 3950 7600 3950
 Wire Wire Line
-	3900 6150 3900 6550
+	7400 3750 7600 3750
 Wire Wire Line
-	4400 6150 3900 6150
+	4100 6150 4400 6150
+Wire Wire Line
+	4400 5950 4100 5950
 Wire Wire Line
 	10650 4350 10850 4350
 Wire Wire Line
@@ -83,7 +85,6 @@ Wire Wire Line
 	7300 2700 7400 2700
 Wire Wire Line
 	3350 4200 3000 4200
-Connection ~ 3000 4200
 Wire Wire Line
 	3000 4200 3000 4600
 Wire Wire Line
@@ -123,8 +124,6 @@ Wire Wire Line
 	9500 1300 9200 1300
 Connection ~ 9500 1300
 Wire Wire Line
-	6400 1050 6600 1050
-Wire Wire Line
 	5800 4750 5500 4750
 Wire Wire Line
 	4500 2800 4500 2500
@@ -148,9 +147,6 @@ Wire Wire Line
 	2500 5000 2500 5100
 Wire Wire Line
 	2800 5100 2800 5200
-Wire Wire Line
-	6800 1250 6400 1250
-Connection ~ 6800 1250
 Wire Wire Line
 	6700 2900 6500 2900
 Wire Wire Line
@@ -177,24 +173,6 @@ Wire Wire Line
 Wire Wire Line
 	9500 6250 9500 6450
 Connection ~ 9500 6250
-Wire Wire Line
-	4600 1150 4100 1150
-Wire Wire Line
-	4600 950  4400 950 
-Wire Wire Line
-	4400 950  4400 850 
-Wire Wire Line
-	4400 850  4100 850 
-Wire Wire Line
-	4600 1350 4100 1350
-Wire Wire Line
-	4600 1550 4400 1550
-Wire Wire Line
-	4400 1550 4400 1650
-Wire Wire Line
-	4400 1650 4100 1650
-Wire Wire Line
-	6100 1050 5800 1050
 Wire Wire Line
 	9200 2150 9200 2250
 Wire Wire Line
@@ -233,12 +211,6 @@ Wire Wire Line
 Wire Wire Line
 	8600 2650 8900 2650
 Wire Wire Line
-	6100 1250 5800 1250
-Wire Wire Line
-	7300 1750 5800 1750
-Wire Wire Line
-	7300 1950 5800 1950
-Wire Wire Line
 	6300 5650 6800 5650
 Wire Wire Line
 	6800 5650 6800 4350
@@ -273,10 +245,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 7050 6300 7050
 Wire Wire Line
-	6800 3650 6500 3650
-Wire Wire Line
-	6800 3750 6500 3750
-Wire Wire Line
 	6800 3850 6500 3850
 Wire Wire Line
 	6300 6550 6500 6550
@@ -289,15 +257,11 @@ Wire Wire Line
 Wire Wire Line
 	4400 5250 4100 5250
 Wire Wire Line
-	4600 1950 4400 1950
-Wire Wire Line
 	6300 6150 6700 6150
 Wire Wire Line
 	6700 2800 6500 2800
 Wire Wire Line
 	6300 7550 6600 7550
-Wire Wire Line
-	4600 1850 4400 1850
 Wire Wire Line
 	6300 6250 6700 6250
 Wire Wire Line
@@ -344,16 +308,41 @@ Wire Wire Line
 Wire Wire Line
 	11050 2250 11050 4350
 Wire Wire Line
-	3750 5950 4400 5950
+	6800 3750 6500 3750
+Wire Wire Line
+	6800 3650 6500 3650
+Connection ~ 6700 1050
+Wire Wire Line
+	7400 3650 7600 3650
+Wire Wire Line
+	7400 3850 7600 3850
+Text Label 7600 3850 0    60   ~ 0
+RXD
+Text Label 7600 3750 0    60   ~ 0
+5V
+Text Label 7600 3650 0    60   ~ 0
+GND
 $Comp
-L CRYSTAL X?
-U 1 1 506BB11F
-P 3750 6250
-F 0 "X?" H 3750 6400 60  0000 C CNN
-F 1 "CRYSTAL" H 3750 6100 60  0000 C CNN
-	1    3750 6250
-	0    1    1    0   
+L C_C C2
+U 1 1 506BAD2D
+P 4000 750
+F 0 "C2" H 4060 764 70  0000 L BNN
+F 1 "10u" H 4059 565 70  0000 L BNN
+	1    4000 750 
+	1    0    0    -1  
 $EndComp
+Text Label 4100 5950 0    70   ~ 0
+P1
+Text Label 4100 6150 0    70   ~ 0
+P2
+Text Label 6500 3650 0    70   ~ 0
+P1
+Text Label 6500 3750 0    70   ~ 0
+P2
+Text Label 1000 4400 0    60   ~ 0
+12V
+Text Label 3300 3000 2    60   ~ 0
+12V
 $Comp
 L CONN_2 P?
 U 1 1 506BB096
@@ -490,15 +479,6 @@ F 1 "3.3uF" H 4259 6565 70  0000 L BNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_C C2
-U 1 1 506BAD2D
-P 4100 950
-F 0 "C2" H 4160 964 70  0000 L BNN
-F 1 "10u" H 4159 765 70  0000 L BNN
-	1    4100 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_C C1
 U 1 1 506BAD2E
 P 3500 5650
@@ -506,33 +486,6 @@ F 0 "C1" H 3560 5664 70  0000 L BNN
 F 1 "100n" H 3559 5465 70  0000 L BNN
 	1    3500 5650
 	1    0    0    -1  
-$EndComp
-$Comp
-L C_C C3
-U 1 1 506BAD2F
-P 4100 1450
-F 0 "C3" H 4160 1464 70  0000 L BNN
-F 1 "10u" H 4159 1265 70  0000 L BNN
-	1    4100 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_C C5
-U 1 1 506BAD30
-P 6200 1050
-F 0 "C5" H 6260 1065 70  0000 L BNN
-F 1 "10u" H 6260 865 70  0000 L BNN
-	1    6200 1050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C_C C6
-U 1 1 506BAD31
-P 6200 1250
-F 0 "C6" H 6260 1265 70  0000 L BNN
-F 1 "10u" H 6260 1065 70  0000 L BNN
-	1    6200 1250
-	0    -1   -1   0   
 $EndComp
 $Comp
 L D_1N5400 D4
@@ -586,15 +539,6 @@ P 5300 6350
 F 0 "IC2" H 4600 4950 70  0000 L BNN
 F 1 "MEGA8-P" H 4601 7600 70  0000 L BNN
 	1    5300 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L IC_MAX232 IC1
-U 1 1 506BAD37
-P 5200 1450
-F 0 "IC1" H 4801 2075 70  0000 L BNN
-F 1 "MAX232" H 4800 650 70  0000 L BNN
-	1    5200 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -823,15 +767,6 @@ F 1 "~" H 7800 6250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SUPPLY_GND GND8
-U 1 1 506BAD1B
-P 6800 1350
-F 0 "GND8" H 6725 1225 70  0000 L BNN
-F 1 "~" H 6800 1350 60  0001 C CNN
-	1    6800 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L SUPPLY_GND GND9
 U 1 1 506BAD1C
 P 7100 5850
@@ -912,15 +847,6 @@ F 1 "2SC458" H 9000 2850 70  0000 L BNN
 	1    9400 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L X_F09 X1
-U 1 1 506BAD27
-P 7600 1850
-F 0 "X1" H 7451 2200 70  0000 L BNN
-F 1 "~" H 7600 1850 60  0001 C CNN
-	1    7600 1850
-	1    0    0    -1  
-$EndComp
 Text Label 4500 3500 0    70   ~ 0
 5V
 Text Label 4200 6650 0    70   ~ 0
@@ -937,8 +863,6 @@ Text Label 9200 5300 0    70   ~ 0
 5V
 Text Label 9500 1100 0    70   ~ 0
 5V
-Text Label 6600 1050 0    70   ~ 0
-5V
 Text Label 1500 3700 0    70   ~ 0
 AKKU
 Text Label 5500 4750 0    70   ~ 0
@@ -949,43 +873,31 @@ Text Label 1400 3400 0    70   ~ 0
 GND
 Text Label 6500 2900 0    70   ~ 0
 MISO
-Text Label 6400 7450 0    70   ~ 0
+Text Label 6600 7450 0    70   ~ 0
 MISO
 Text Label 6500 2500 0    70   ~ 0
 MOSI
-Text Label 6400 7350 0    70   ~ 0
+Text Label 6600 7350 0    70   ~ 0
 MOSI
-Text Label 6500 3650 0    70   ~ 0
-P1
-Text Label 4100 5950 0    70   ~ 0
-P1
-Text Label 6500 3750 0    70   ~ 0
-P2
-Text Label 4100 6150 0    70   ~ 0
-P2
 Text Label 6500 3850 0    70   ~ 0
 P3
-Text Label 6400 6550 0    70   ~ 0
+Text Label 6500 6550 0    70   ~ 0
 P3
 Text Label 6500 3950 0    70   ~ 0
 P4
-Text Label 6400 7250 0    70   ~ 0
+Text Label 6500 7250 0    70   ~ 0
 P4
 Text Label 6500 2700 0    70   ~ 0
 RESET
 Text Label 4100 5250 0    70   ~ 0
 RESET
-Text Label 4400 1950 0    70   ~ 0
-RXD
-Text Label 6600 6150 0    70   ~ 0
+Text Label 6700 6150 0    70   ~ 0
 RXD
 Text Label 6500 2800 0    70   ~ 0
 SCK
-Text Label 6400 7550 0    70   ~ 0
+Text Label 6600 7550 0    70   ~ 0
 SCK
-Text Label 4400 1850 0    70   ~ 0
-TXD
-Text Label 6600 6250 0    70   ~ 0
+Text Label 6700 6250 0    70   ~ 0
 TXD
 Text Label 2800 5550 0    70   ~ 0
 12V
