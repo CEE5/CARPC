@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Oct 2012 11:02:27 PM CEST
+EESchema Schematic File Version 2  date Wed 03 Oct 2012 11:55:49 PM CEST
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -55,6 +55,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Label 3300 3000 2    60   ~ 0
+12V
 Wire Wire Line
 	3750 6550 3900 6550
 Wire Wire Line
@@ -417,7 +419,7 @@ F 1 "CONN_2" V 700 3800 40  0000 C CNN
 	1    650  3800
 	-1   0    0    1   
 $EndComp
-Text Label 4200 4200 0    60   ~ 0
+Text Label 4200 4200 2    60   ~ 0
 K2 NO
 Text Label 4200 5050 0    60   ~ 0
 K2 C
@@ -477,15 +479,6 @@ F 0 "21" H 7250 7308 70  0000 L BNN
 F 1 "130k" H 7250 7120 70  0000 L BNN
 	1    7400 7250
 	-1   0    0    1   
-$EndComp
-$Comp
-L P+_VCC 12V1
-U 1 1 506BAD2B
-P 3200 3000
-F 0 "12V1" V 3100 2900 70  0000 L BNN
-F 1 "~" H 3200 3000 60  0001 C CNN
-	1    3200 3000
-	0    -1   -1   0   
 $EndComp
 $Comp
 L C_C C4
@@ -994,10 +987,6 @@ Text Label 4400 1850 0    70   ~ 0
 TXD
 Text Label 6600 6250 0    70   ~ 0
 TXD
-Text Label 4200 3000 0    70   ~ 0
-VCC
-Text Label 1250 3200 0    70   ~ 0
-12V
 Text Label 2800 5550 0    70   ~ 0
 12V
 Text Label 7800 4950 0    70   ~ 0
