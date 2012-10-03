@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Oct 2012 05:24:30 AM CEST
+EESchema Schematic File Version 2  date Wed 03 Oct 2012 05:27:23 AM CEST
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -54,8 +54,23 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1400 3900 0    60   ~ 0
-GND
+$Comp
+L CONN_2 P?
+U 1 1 506BB096
+P 10950 4700
+F 0 "P?" V 10900 4700 40  0000 C CNN
+F 1 "CONN_2" V 11000 4700 40  0000 C CNN
+	1    10950 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 4350 10850 4350
+Wire Wire Line
+	10350 1400 10300 1400
+Wire Wire Line
+	10300 1400 10300 1250
+Wire Wire Line
+	10650 3500 10650 3300
 Wire Wire Line
 	1000 3900 1400 3900
 Wire Wire Line
@@ -76,13 +91,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 5400 9750 5400
 Wire Wire Line
-	12500 2250 10350 2250
-Wire Wire Line
 	10800 3500 10800 3300
-Wire Wire Line
-	10800 3300 12200 3300
-Wire Wire Line
-	11800 3450 11800 4350
 Wire Wire Line
 	9800 4350 9650 4350
 Wire Wire Line
@@ -95,10 +104,6 @@ Wire Wire Line
 	9650 3500 9650 3750
 Wire Wire Line
 	9650 3750 9200 3750
-Wire Wire Line
-	10350 1400 10300 1400
-Wire Wire Line
-	10300 1400 10300 1950
 Wire Wire Line
 	4500 3200 4500 3500
 Wire Wire Line
@@ -157,10 +162,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 3200 2000 3200
 Wire Wire Line
-	12500 2850 12200 2850
-Wire Wire Line
-	11800 3450 12500 3450
-Wire Wire Line
 	4400 5550 3400 5550
 Wire Wire Line
 	9200 4250 9200 4150
@@ -194,18 +195,6 @@ Wire Wire Line
 	4400 1650 4100 1650
 Wire Wire Line
 	6100 1050 5800 1050
-Wire Wire Line
-	10300 1950 10100 1950
-Wire Wire Line
-	10100 1950 10100 2350
-Wire Wire Line
-	12500 2550 12300 2550
-Wire Wire Line
-	12300 2550 12300 2350
-Wire Wire Line
-	12300 2350 10100 2350
-Wire Wire Line
-	12500 1950 10700 1950
 Wire Wire Line
 	9200 2150 9200 2250
 Wire Wire Line
@@ -328,19 +317,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 1300 9200 1950
 Wire Wire Line
-	10500 1400 10700 1400
-Wire Wire Line
-	10700 1400 10700 1950
-Wire Wire Line
 	9500 3550 9500 3750
-Wire Wire Line
-	11800 4350 10650 4350
-Wire Wire Line
-	12500 3150 10650 3150
-Wire Wire Line
-	10650 3150 10650 3500
-Wire Wire Line
-	12200 2850 12200 3300
 Wire Wire Line
 	9200 6250 9750 6250
 Wire Wire Line
@@ -362,6 +339,43 @@ Wire Wire Line
 	1000 4200 2500 4200
 Wire Wire Line
 	1000 3700 2800 3700
+Wire Wire Line
+	10650 3300 10600 3300
+Wire Wire Line
+	10500 1250 10500 1400
+Wire Wire Line
+	10350 2250 11050 2250
+Wire Wire Line
+	11050 2250 11050 4350
+$Comp
+L CONN_2 P?
+U 1 1 506BB075
+P 10400 900
+F 0 "P?" V 10350 900 40  0000 C CNN
+F 1 "CONN_2" V 10450 900 40  0000 C CNN
+	1    10400 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RELAY-1XCHANCE K2
+U 1 1 506BA763
+P 9950 2300
+F 0 "K2" H 9375 3300 60  0000 C CNN
+F 1 "RELAY-1XCHANCE" H 9475 2225 60  0000 C CNN
+	1    9950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 506BB029
+P 10700 2950
+F 0 "P?" V 10650 2950 40  0000 C CNN
+F 1 "CONN_2" V 10750 2950 40  0000 C CNN
+	1    10700 2950
+	0    -1   -1   0   
+$EndComp
+Text Label 1400 3900 0    60   ~ 0
+GND
 $Comp
 L CONN_2 P?
 U 1 1 506BAFC8
@@ -430,15 +444,6 @@ P 10250 4400
 F 0 "K4" H 9675 5400 60  0000 C CNN
 F 1 "RELAY-1XCHANCE" H 9775 4325 60  0000 C CNN
 	1    10250 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L RELAY-1XCHANCE K2
-U 1 1 506BA763
-P 9950 2300
-F 0 "K2" H 9375 3300 60  0000 C CNN
-F 1 "RELAY-1XCHANCE" H 9475 2225 60  0000 C CNN
-	1    9950 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -872,15 +877,6 @@ F 0 "SV3" H 6951 4580 70  0000 L BNN
 F 1 "~" H 7100 4050 60  0001 C CNN
 	1    7100 4050
 	1    0    0    -1  
-$EndComp
-$Comp
-L SV_MA20-1 SV4
-U 1 1 506BAD22
-P 12800 2850
-F 0 "SV4" H 12750 3980 70  0000 L BNN
-F 1 "~" H 12800 2850 60  0001 C CNN
-	1    12800 2850
-	-1   0    0    1   
 $EndComp
 $Comp
 L T_2SC458 T2
