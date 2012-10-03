@@ -1,4 +1,5 @@
-EESchema Schematic File Version 2  date Wed 03 Oct 2012 11:02:27 PM CEST
+EESchema Schematic File Version 2  date Wed 03 Oct 2012 05:29:51 AM CEST
+LIBS:carpc-cache
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -39,9 +40,7 @@ LIBS:transistors
 LIBS:ttl_ieee
 LIBS:valves
 LIBS:xilinx
-LIBS:carpc-cache
-LIBS:carpc-cache
-EELAYER 25  0
+EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
