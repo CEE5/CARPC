@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Oct 2012 05:27:23 AM CEST
+EESchema Schematic File Version 2  date Wed 03 Oct 2012 05:29:51 AM CEST
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -54,15 +54,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CONN_2 P?
-U 1 1 506BB096
-P 10950 4700
-F 0 "P?" V 10900 4700 40  0000 C CNN
-F 1 "CONN_2" V 11000 4700 40  0000 C CNN
-	1    10950 4700
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	3750 6550 3900 6550
+Wire Wire Line
+	3900 6150 3900 6550
+Wire Wire Line
+	4400 6150 3900 6150
 Wire Wire Line
 	10650 4350 10850 4350
 Wire Wire Line
@@ -275,11 +272,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 3650 6500 3650
 Wire Wire Line
-	4400 5950 4000 5950
-Wire Wire Line
 	6800 3750 6500 3750
-Wire Wire Line
-	4400 6150 4000 6150
 Wire Wire Line
 	6800 3850 6500 3850
 Wire Wire Line
@@ -347,6 +340,26 @@ Wire Wire Line
 	10350 2250 11050 2250
 Wire Wire Line
 	11050 2250 11050 4350
+Wire Wire Line
+	3750 5950 4400 5950
+$Comp
+L CRYSTAL X?
+U 1 1 506BB11F
+P 3750 6250
+F 0 "X?" H 3750 6400 60  0000 C CNN
+F 1 "CRYSTAL" H 3750 6100 60  0000 C CNN
+	1    3750 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 506BB096
+P 10950 4700
+F 0 "P?" V 10900 4700 40  0000 C CNN
+F 1 "CONN_2" V 11000 4700 40  0000 C CNN
+	1    10950 4700
+	0    1    1    0   
+$EndComp
 $Comp
 L CONN_2 P?
 U 1 1 506BB075
