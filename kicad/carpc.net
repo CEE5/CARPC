@@ -1,23 +1,23 @@
-# EESchema Netlist Version 1.1 created  Thu 04 Oct 2012 01:05:14 AM CEST
+# EESchema Netlist Version 1.1 created  Fri 05 Oct 2012 09:30:16 PM CEST
 (
  ( /506BB096 $noname  P6 CONN_2 {Lib=CONN_2}
-  (    1 N-000066 )
-  (    2 N-000024 )
+  (    1 N-000068 )
+  (    2 N-000071 )
  )
  ( /506BB075 $noname  P4 CONN_2 {Lib=CONN_2}
-  (    1 N-000063 )
-  (    2 N-000068 )
+  (    1 N-000070 )
+  (    2 N-000067 )
  )
  ( /506BA763 $noname  K2 RELAY-1XCHANCE {Lib=RELAY-1XCHANCE}
   (    1 /5V )
-  (    2 N-000063 )
-  (    3 N-000032 )
-  (    4 N-000068 )
-  (    5 N-000066 )
+  (    2 N-000070 )
+  (    3 N-000030 )
+  (    4 N-000067 )
+  (    5 N-000068 )
  )
  ( /506BB029 $noname  P5 CONN_2 {Lib=CONN_2}
-  (    1 N-000075 )
-  (    2 N-000018 )
+  (    1 N-000066 )
+  (    2 N-000074 )
  )
  ( /506BAFC8 $noname  P3 CONN_2 {Lib=CONN_2}
   (    1 /12V )
@@ -25,97 +25,97 @@
  )
  ( /506BAEBD $noname  P1 CONN_2 {Lib=CONN_2}
   (    1 /GND )
-  (    2 N-000073 )
+  (    2 N-000029 )
  )
  ( /506BAEB4 $noname  P2 CONN_2 {Lib=CONN_2}
   (    1 /GND )
   (    2 /AKKU )
  )
  ( /506BAAE4 $noname  K1 RELAY-1XCHANCE {Lib=RELAY-1XCHANCE}
-  (    1 N-000033 )
+  (    1 N-000073 )
   (    2 ? )
-  (    3 N-000072 )
+  (    3 N-000045 )
   (    4 ? )
   (    5 /K2_C )
  )
  ( /506BA887 $noname  K3 RELAY-1XCHANCE {Lib=RELAY-1XCHANCE}
   (    1 /5V )
   (    2 ? )
-  (    3 N-000034 )
+  (    3 N-000032 )
   (    4 ? )
   (    5 ? )
  )
  ( /506BA7E9 $noname  K4 RELAY-1XCHANCE {Lib=RELAY-1XCHANCE}
   (    1 /5V )
-  (    2 N-000075 )
-  (    3 N-000019 )
-  (    4 N-000018 )
-  (    5 N-000024 )
+  (    2 N-000066 )
+  (    3 N-000021 )
+  (    4 N-000074 )
+  (    5 N-000071 )
  )
- ( /506BAD29 $noname  1 130k {Lib=R_R-EU_}
-  (    1 N-000023 )
-  (    2 N-000002 )
+ ( /506BAD29 $noname  R5 130k {Lib=R_R-EU_}
+  (    1 N-000020 )
+  (    2 N-000004 )
  )
- ( /506BAD2A $noname  2 130k {Lib=R_R-EU_}
-  (    1 N-000022 )
+ ( /506BAD2A $noname  R6 130k {Lib=R_R-EU_}
+  (    1 N-000019 )
   (    2 N-000001 )
  )
  ( /506BAD2C $noname  C2 3.3uF {Lib=C_C}
   (    1 /5V )
-  (    2 N-000021 )
+  (    2 N-000018 )
  )
  ( /506BAD2E $noname  C1 100n {Lib=C_C}
   (    1 ? )
-  (    2 N-000047 )
+  (    2 N-000049 )
  )
  ( /506BAD32 $noname  D4 1N5400 {Lib=D_1N5400}
-  (    A N-000019 )
+  (    A N-000021 )
   (    C /5V )
  )
  ( /506BAD33 $noname  D5 1N5400 {Lib=D_1N5400}
-  (    A N-000034 )
-  (    C /5V )
- )
- ( /506BAD34 $noname  D2 1N5400 {Lib=D_1N5400}
-  (    A N-000072 )
-  (    C N-000033 )
- )
- ( /506BAD28 $noname  D3 1N5400 {Lib=D_1N5400}
   (    A N-000032 )
   (    C /5V )
  )
+ ( /506BAD34 $noname  D2 1N5400 {Lib=D_1N5400}
+  (    A N-000045 )
+  (    C N-000073 )
+ )
+ ( /506BAD28 $noname  D3 1N5400 {Lib=D_1N5400}
+  (    A N-000030 )
+  (    C /5V )
+ )
  ( /506BAD35 $noname  D1 BZW04XX {Lib=D_BZW04XX}
-  (    A N-000073 )
+  (    A N-000029 )
   (    C /K2_C )
  )
  ( /506BAD36 $noname  IC1 MEGA8-P {Lib=IC_MEGA8-P}
   (    1 /RESET )
   (    2 /RXD )
   (    3 /TXD )
-  (    4 N-000029 )
-  (    5 N-000028 )
+  (    4 N-000026 )
+  (    5 N-000053 )
   (    6 /P3 )
   (    7 /5V )
-  (    8 N-000048 )
+  (    8 N-000050 )
   (    9 /P1 )
   (   10 /P2 )
-  (   11 N-000011 )
-  (   12 N-000016 )
+  (   11 N-000025 )
+  (   12 N-000065 )
   (   13 N-000014 )
-  (   14 N-000005 )
-  (   15 N-000004 )
+  (   14 N-000006 )
+  (   15 N-000002 )
   (   16 /P4 )
   (   17 /MOSI )
   (   18 /MISO )
   (   19 /SCK )
   (   20 /5V )
-  (   21 N-000017 )
-  (   22 N-000049 )
-  (   23 N-000006 )
-  (   24 N-000062 )
-  (   25 N-000003 )
-  (   26 N-000057 )
-  (   27 N-000059 )
+  (   21 N-000016 )
+  (   22 N-000051 )
+  (   23 N-000010 )
+  (   24 N-000005 )
+  (   25 N-000059 )
+  (   26 N-000064 )
+  (   27 N-000003 )
   (   28 N-000009 )
  )
  ( /506BAD38 $noname  L1 2N5496 {Lib=T_2N5496}
@@ -124,90 +124,90 @@
   (    3 /5V )
  )
  ( /506BAD39 $noname  LED2 ~ {Lib=LED_LED}
-  (  A@1 N-000004 )
+  (  A@1 N-000002 )
   (  C@1 N-000001 )
  )
  ( /506BAD3A $noname  LED1 ~ {Lib=LED_LED}
-  (  A@1 N-000005 )
-  (  C@1 N-000002 )
+  (  A@1 N-000006 )
+  (  C@1 N-000004 )
  )
  ( /506BAD3B $noname  R1 10k {Lib=R_R-EU_}
   (    1 /12V )
-  (    2 N-000017 )
+  (    2 N-000016 )
  )
  ( /506BAD3C $noname  R2 10k {Lib=R_R-EU_}
   (    1 /5V )
   (    2 /RESET )
  )
- ( /506BAD3D $noname  R8 470 {Lib=R_R-EU_}
-  (    1 N-000016 )
+ ( /506BAD3D $noname  R10 470 {Lib=R_R-EU_}
+  (    1 N-000065 )
   (    2 N-000015 )
  )
- ( /506BAD3E $noname  R9 470 {Lib=R_R-EU_}
+ ( /506BAD3E $noname  R11 470 {Lib=R_R-EU_}
   (    1 N-000014 )
   (    2 N-000013 )
  )
- ( /506BAD3F $noname  R6 130k {Lib=R_R-EU_}
+ ( /506BAD3F $noname  R8 130k {Lib=R_R-EU_}
   (    1 N-000012 )
   (    2 N-000009 )
  )
- ( /506B9CCB $noname  R7 470 {Lib=R_R-EU_}
-  (    1 N-000011 )
-  (    2 N-000010 )
+ ( /506B9CCB $noname  R9 470 {Lib=R_R-EU_}
+  (    1 N-000025 )
+  (    2 N-000011 )
  )
  ( /506BAD19 $noname  R4 10k {Lib=R_R-EU_}
-  (    1 N-000006 )
+  (    1 N-000010 )
   (    2 /AKKU )
  )
  ( /506BAD0B $noname  R3 100 {Lib=R_R-EU_}
-  (    1 N-000033 )
+  (    1 N-000073 )
   (    2 /ZÜNDUNG )
  )
- ( /506BAD0C $noname  R5 180k {Lib=R_R-EU_}
+ ( /506BAD0C $noname  R7 180k {Lib=R_R-EU_}
   (    1 N-000009 )
   (    2 /ZÜNDUNG )
  )
  ( /506BAD0D $noname  S1 ~ {Lib=S_10-XX}
   (    1 N-000008 )
   (    2 ? )
-  (    3 N-000029 )
+  (    3 N-000026 )
   (    4 ? )
  )
  ( /506BAD0E $noname  S2 ~ {Lib=S_10-XX}
   (    1 ? )
-  (    2 N-000042 )
-  (    3 N-000028 )
+  (    2 N-000043 )
+  (    3 N-000053 )
   (    4 ? )
  )
  ( /506BAD10 $noname  GND3 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000049 )
+  (    ~ N-000051 )
  )
  ( /506BAD11 $noname  GND4 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000048 )
+  (    ~ N-000050 )
  )
  ( /506BAD12 $noname  GND1 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000047 )
+  (    ~ N-000049 )
  )
  ( /506BAD13 $noname  GND5 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000021 )
+  (    ~ N-000018 )
  )
  ( /506BAD14 $noname  GND12 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000060 )
+  (    ~ N-000062 )
  )
  ( /506BAD15 $noname  GND2 ~ {Lib=SUPPLY_GND}
   (    ~ /GND )
  )
  ( /506BAD16 $noname  GND14 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000045 )
+  (    ~ N-000047 )
  )
  ( /506BAD17 $noname  GND15 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000044 )
+  (    ~ N-000046 )
  )
  ( /506BAD18 $noname  GND6 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000072 )
+  (    ~ N-000045 )
  )
  ( /506BAD0A $noname  GND13 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000043 )
+  (    ~ N-000044 )
  )
  ( /506BAD1A $noname  GND11 ~ {Lib=SUPPLY_GND}
   (    ~ N-000012 )
@@ -216,35 +216,35 @@
   (    ~ N-000008 )
  )
  ( /506BAD1D $noname  GND8 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000042 )
+  (    ~ N-000043 )
  )
  ( /506BAD1E $noname  GND10 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000022 )
+  (    ~ N-000019 )
  )
  ( /506BAD1F $noname  GND9 ~ {Lib=SUPPLY_GND}
-  (    ~ N-000023 )
+  (    ~ N-000020 )
  )
  ( /506BAD20 $noname  ISP_SOCKET1 ~ {Lib=SV_MA05-2}
   (    1 /MOSI )
   (    2 /5V )
   (    3 ? )
-  (    4 N-000060 )
+  (    4 N-000062 )
   (    5 /RESET )
-  (    6 N-000060 )
+  (    6 N-000062 )
   (    7 /SCK )
-  (    8 N-000060 )
+  (    8 N-000062 )
   (    9 /MISO )
-  (   10 N-000060 )
+  (   10 N-000062 )
  )
  ( /506BAD21 $noname  PinSocket1 ~ {Lib=SV_MA08-2}
   (    1 ? )
-  (    2 N-000059 )
+  (    2 N-000003 )
   (    3 ? )
-  (    4 N-000057 )
+  (    4 N-000064 )
   (    5 ? )
-  (    6 N-000003 )
+  (    6 N-000059 )
   (    7 ? )
-  (    8 N-000062 )
+  (    8 N-000005 )
   (    9 /TXD )
   (   10 /P4 )
   (   11 /RXD )
@@ -256,191 +256,217 @@
  )
  ( /506BAD24 $noname  T2 2SC458 {Lib=T_2SC458}
   (    B N-000015 )
-  (    C N-000019 )
-  (    E N-000045 )
+  (    C N-000021 )
+  (    E N-000047 )
  )
  ( /506BAD25 $noname  T3 2SC458 {Lib=T_2SC458}
   (    B N-000013 )
-  (    C N-000034 )
-  (    E N-000044 )
+  (    C N-000032 )
+  (    E N-000046 )
  )
  ( /506BAD26 $noname  T1 2SC458 {Lib=T_2SC458}
-  (    B N-000010 )
-  (    C N-000032 )
-  (    E N-000043 )
+  (    B N-000011 )
+  (    C N-000030 )
+  (    E N-000044 )
  )
 )
 *
 { Pin List by Nets
 Net 1 "" ""
  LED2 C@1
- 2 2
+ R6 2
 Net 2 "" ""
- 1 2
- LED1 C@1
-Net 3 "" ""
- PinSocket1 6
- IC1 25
-Net 4 "" ""
  LED2 A@1
  IC1 15
+Net 3 "" ""
+ IC1 27
+ PinSocket1 2
+Net 4 "" ""
+ LED1 C@1
+ R5 2
 Net 5 "" ""
+ PinSocket1 8
+ IC1 24
+Net 6 "" ""
  IC1 14
  LED1 A@1
-Net 6 "" ""
- R4 1
- IC1 23
 Net 8 "" ""
  GND7 ~
  S1 1
 Net 9 "" ""
- R6 2
- R5 1
+ R7 1
+ R8 2
  IC1 28
 Net 10 "" ""
- R7 2
- T1 B
+ IC1 23
+ R4 1
 Net 11 "" ""
- R7 1
- IC1 11
-Net 12 "" ""
- R6 1
- GND11 ~
-Net 13 "" ""
  R9 2
+ T1 B
+Net 12 "" ""
+ GND11 ~
+ R8 1
+Net 13 "" ""
  T3 B
+ R11 2
 Net 14 "" ""
+ R11 1
  IC1 13
- R9 1
 Net 15 "" ""
- R8 2
+ R10 2
  T2 B
 Net 16 "" ""
- R8 1
- IC1 12
-Net 17 "" ""
  R1 2
  IC1 21
 Net 18 "" ""
- P5 2
- K4 4
-Net 19 "" ""
- D4 A
- K4 3
- T2 C
-Net 21 "" ""
  GND5 ~
  C2 2
-Net 22 "" ""
- 2 1
+Net 19 "" ""
  GND10 ~
-Net 23 "" ""
- 1 1
+ R6 1
+Net 20 "" ""
  GND9 ~
-Net 24 "" ""
- K4 5
- P6 2
-Net 28 "" ""
- IC1 5
- S2 3
-Net 29 "" ""
- S1 3
+ R5 1
+Net 21 "" ""
+ T2 C
+ K4 3
+ D4 A
+Net 25 "" ""
+ IC1 11
+ R9 1
+Net 26 "" ""
  IC1 4
-Net 30 "/RESET" "RESET"
+ S1 3
+Net 27 "/RESET" "RESET"
+ IC1 1
  R2 2
  ISP_SOCKET1 5
- IC1 1
-Net 31 "/K2 C" "K2 C"
- K1 5
+Net 28 "/K2 C" "K2 C"
  D1 C
-Net 32 "" ""
- T1 C
+ K1 5
+Net 29 "" ""
+ D1 A
+ P1 2
+Net 30 "" ""
  K2 3
  D3 A
-Net 33 "" ""
- R3 1
- K1 1
- D2 C
-Net 34 "" ""
- T3 C
+ T1 C
+Net 31 "/AKKU" "AKKU"
+ P2 2
+ R4 2
+Net 32 "" ""
  K3 3
+ T3 C
  D5 A
-Net 35 "/12V" "12V"
+Net 33 "/P1" "P1"
+ IC1 9
+ PinSocket1 16
+Net 34 "/P2" "P2"
+ PinSocket1 14
+ IC1 10
+Net 35 "/ZÜNDUNG" "ZÜNDUNG"
+ P3 2
+ R7 2
+ R3 2
+Net 36 "/12V" "12V"
+ L1 1
  R1 1
  P3 1
- L1 1
-Net 36 "/TXD" "TXD"
- IC1 3
+Net 37 "/TXD" "TXD"
  PinSocket1 9
-Net 37 "/SCK" "SCK"
+ IC1 3
+Net 38 "/SCK" "SCK"
  IC1 19
  ISP_SOCKET1 7
-Net 38 "/RXD" "RXD"
+Net 39 "/RXD" "RXD"
  PinSocket1 11
  IC1 2
-Net 39 "/P3" "P3"
+Net 40 "/P3" "P3"
  PinSocket1 12
  IC1 6
-Net 40 "/MOSI" "MOSI"
+Net 41 "/MOSI" "MOSI"
  IC1 17
  ISP_SOCKET1 1
-Net 41 "/MISO" "MISO"
+Net 42 "/MISO" "MISO"
  ISP_SOCKET1 9
  IC1 18
-Net 42 "" ""
- GND8 ~
- S2 2
 Net 43 "" ""
+ S2 2
+ GND8 ~
+Net 44 "" ""
  T1 E
  GND13 ~
-Net 44 "" ""
- T3 E
- GND15 ~
 Net 45 "" ""
+ GND6 ~
+ K1 3
+ D2 A
+Net 46 "" ""
+ GND15 ~
+ T3 E
+Net 47 "" ""
  GND14 ~
  T2 E
-Net 46 "/GND" "GND"
+Net 48 "/GND" "GND"
+ PinSocket1 15
  P2 1
  P1 1
- PinSocket1 15
- GND2 ~
  L1 2
-Net 47 "" ""
- GND1 ~
+ GND2 ~
+Net 49 "" ""
  C1 2
-Net 48 "" ""
+ GND1 ~
+Net 50 "" ""
  GND4 ~
  IC1 8
-Net 49 "" ""
- GND3 ~
+Net 51 "" ""
  IC1 22
-Net 54 "/P4" "P4"
+ GND3 ~
+Net 53 "" ""
+ S2 3
+ IC1 5
+Net 57 "/P4" "P4"
  PinSocket1 10
  IC1 16
-Net 57 "" ""
- IC1 26
- PinSocket1 4
 Net 59 "" ""
- IC1 27
- PinSocket1 2
-Net 60 "" ""
+ IC1 25
+ PinSocket1 6
+Net 62 "" ""
  ISP_SOCKET1 4
- GND12 ~
  ISP_SOCKET1 6
  ISP_SOCKET1 8
  ISP_SOCKET1 10
-Net 62 "" ""
- PinSocket1 8
- IC1 24
-Net 63 "" ""
+ GND12 ~
+Net 64 "" ""
+ PinSocket1 4
+ IC1 26
+Net 65 "" ""
+ IC1 12
+ R10 1
+Net 66 "" ""
+ P5 1
+ K4 2
+Net 67 "" ""
+ P4 2
+ K2 4
+Net 68 "" ""
+ K2 5
+ P6 1
+Net 70 "" ""
  K2 2
  P4 1
-Net 64 "/5V" "5V"
- K2 1
- ISP_SOCKET1 2
- PinSocket1 13
- D5 C
+Net 71 "" ""
+ P6 2
+ K4 5
+Net 73 "" ""
+ K1 1
+ D2 C
+ R3 1
+Net 74 "" ""
+ K4 4
+ P5 2
+Net 75 "/5V" "5V"
  D3 C
+ D5 C
  IC1 7
  IC1 20
  K3 1
@@ -449,34 +475,8 @@ Net 64 "/5V" "5V"
  C2 1
  R2 1
  L1 3
-Net 65 "/P1" "P1"
- IC1 9
- PinSocket1 16
-Net 66 "" ""
- P6 1
- K2 5
-Net 67 "/P2" "P2"
- PinSocket1 14
- IC1 10
-Net 68 "" ""
- K2 4
- P4 2
-Net 69 "/AKKU" "AKKU"
- P2 2
- R4 2
-Net 72 "" ""
- D2 A
- K1 3
- GND6 ~
-Net 73 "" ""
- D1 A
- P1 2
-Net 74 "/ZÜNDUNG" "ZÜNDUNG"
- P3 2
- R3 2
- R5 2
-Net 75 "" ""
- K4 2
- P5 1
+ K2 1
+ ISP_SOCKET1 2
+ PinSocket1 13
 }
 #End

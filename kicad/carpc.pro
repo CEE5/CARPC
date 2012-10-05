@@ -1,5 +1,5 @@
-update=Wed 03 Oct 2012 04:45:04 AM CEST
-last_client=eeschema
+update=Fri 05 Oct 2012 09:27:46 PM CEST
+last_client=pcbnew
 [eeschema]
 version=1
 LibDir=
@@ -73,3 +73,32 @@ LibName38=ttl_ieee
 LibName39=valves
 LibName40=xilinx
 LibName41=carpc-cache
+[pcbnew]
+version=1
+PadDrlX=320
+PadDimH=600
+PadDimV=600
+BoardThickness=630
+TxtPcbV=800
+TxtPcbH=600
+TxtModV=600
+TxtModH=600
+TxtModW=120
+VEgarde=100
+DrawLar=150
+EdgeLar=150
+TxtLar=120
+MSegLar=150
+LastNetListRead=carpc.net
+[pcbnew/libraries]
+LibDir=
+LibName1=sockets
+LibName2=connect
+LibName3=discret
+LibName4=pin_array
+LibName5=divers
+LibName6=libcms
+LibName7=display
+LibName8=valves
+LibName9=led
+LibName10=dip_sockets
