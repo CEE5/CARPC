@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 05 Oct 2012 09:30:10 PM CEST
+EESchema Schematic File Version 2  date Sun 14 Oct 2012 08:23:47 AM CEST
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -47,7 +47,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "carpc.sch"
-Date "5 oct 2012"
+Date "14 oct 2012"
 Rev "1.0"
 Comp ""
 Comment1 ""
@@ -55,6 +55,19 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 5400 5750
+Wire Wire Line
+	5700 5950 5500 5950
+Wire Wire Line
+	5500 5750 5500 5950
+Wire Wire Line
+	5000 5750 5500 5750
+Connection ~ 5000 6150
+Wire Wire Line
+	5100 6150 4200 6150
+Connection ~ 5100 5750
+Wire Wire Line
+	5100 5750 5100 5650
 Wire Wire Line
 	8700 6350 8700 4650
 Wire Wire Line
@@ -142,8 +155,6 @@ Wire Wire Line
 	4200 6250 5300 6250
 Wire Wire Line
 	5300 6250 5300 6150
-Wire Wire Line
-	4200 6150 5000 6150
 Wire Wire Line
 	4700 3850 4400 3850
 Wire Wire Line
@@ -309,6 +320,15 @@ Wire Wire Line
 	8600 2650 8600 6250
 Wire Wire Line
 	8900 6650 4200 6650
+Wire Wire Line
+	5100 5650 4850 5650
+Connection ~ 5300 5750
+Wire Wire Line
+	5300 6150 5400 6150
+Text Label 4850 5650 2    60   ~ 0
+GND
+Text Notes 1600 850  0    60   ~ 0
+12V from Car
 Text Label 5500 3750 0    60   ~ 0
 TXD
 Text Label 5500 3650 0    60   ~ 0
@@ -742,33 +762,6 @@ F 0 "GND13" H 9425 2925 70  0000 L BNN
 F 1 "~" H 9500 3050 60  0001 C CNN
 	1    9500 3050
 	1    0    0    -1  
-$EndComp
-$Comp
-L SUPPLY_GND GND11
-U 1 1 506BAD1A
-P 5700 6050
-F 0 "GND11" H 5625 5925 70  0000 L BNN
-F 1 "~" H 5700 6050 60  0001 C CNN
-	1    5700 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L SUPPLY_GND GND7
-U 1 1 506BAD1C
-P 5000 5650
-F 0 "GND7" H 4926 5525 70  0000 L BNN
-F 1 "~" H 5000 5650 60  0001 C CNN
-	1    5000 5650
-	-1   0    0    1   
-$EndComp
-$Comp
-L SUPPLY_GND GND8
-U 1 1 506BAD1D
-P 5400 5650
-F 0 "GND8" H 5326 5525 70  0000 L BNN
-F 1 "~" H 5400 5650 60  0001 C CNN
-	1    5400 5650
-	-1   0    0    1   
 $EndComp
 $Comp
 L SUPPLY_GND GND10
