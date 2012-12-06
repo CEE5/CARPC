@@ -1,5 +1,5 @@
-update=Wed 28 Nov 2012 01:06:32 PM CET
-last_client=pcbnew
+update=Wed 28 Nov 2012 01:13:36 PM CET
+last_client=kicad
 [eeschema]
 version=1
 LibDir=
@@ -180,3 +180,5 @@ LibName85=Transistor_TO-247_RevC
 LibName86=TSOT6-MK06A-Housing_26Jul2012
 LibName87=WireConnections-Bridges_RevA
 LibName88=WirePads_RevA
+[general]
+version=1
